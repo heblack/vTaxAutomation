@@ -8,6 +8,7 @@ const driver = new Builder()
     .forBrowser('firefox')
     .build();
 const automationProcessStepOne = ()  =>  {
+    console.log('test');
     driver.navigate().to('https://vatx-dev-sit-1697.paymentus.io/biller/stde/vatx?v2=true')
     .then(() => driver.findElement(By.id('inputEmail')).sendKeys('paymentus'))
     .then(() => driver.findElement(By.id('inputPassword')).sendKeys('charlotte28277', Key.RETURN))
